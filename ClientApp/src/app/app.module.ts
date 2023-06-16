@@ -4,16 +4,19 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { SidebarModule } from 'primeng/sidebar';
-import { ButtonModule } from 'primeng/button';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './private/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './public/login/login.component';
 import { SampleGuard } from './guards/SampleGuard';
 import { PrivateComponent } from './private/private.component';
 import { PublicComponent } from './public/public.component';
+import { DetonadosComponent } from './private/detonados/detonados.component';
+import { JogosComponent } from './private/jogos/jogos.component';
+import { NoticiasComponent } from './private/noticias/noticias.component';
+import { PerfilUsuarioComponent } from './private/perfil-usuario/perfil-usuario.component';
+import { ReviewsComponent } from './private/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -21,15 +24,18 @@ import { PublicComponent } from './public/public.component';
     HomeComponent, 
     PrivateComponent,
     PublicComponent,
-    LoginComponent
+    LoginComponent,
+    DetonadosComponent,
+    JogosComponent,
+    NoticiasComponent,
+    PerfilUsuarioComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    ButtonModule,
-    SidebarModule,
     AppRoutingModule
   ],
   providers: [
