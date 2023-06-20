@@ -4,6 +4,7 @@ import { SampleGuard } from './guards/SampleGuard';
 import { DetonadosComponent } from './private/detonados/detonados.component';
 import { HomeComponent } from './private/home/home.component';
 import { JogosComponent } from './private/jogos/jogos.component';
+import { CriarNoticiaComponent } from './private/noticias/criar-noticia/criar-noticia.component';
 import { NoticiasComponent } from './private/noticias/noticias.component';
 import { PerfilUsuarioComponent } from './private/perfil-usuario/perfil-usuario.component';
 import { PrivateComponent } from './private/private.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
       { path: 'detonados', component: DetonadosComponent },
       { path: 'jogos', component: JogosComponent },
       { path: 'noticias', component: NoticiasComponent },
+      { path: 'criar-noticia', component: CriarNoticiaComponent },
       { path: 'perfil-usuario', component: PerfilUsuarioComponent },
       { path: 'reviews', component: ReviewsComponent },
     ],

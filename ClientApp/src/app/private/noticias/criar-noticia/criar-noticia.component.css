@@ -3293,7 +3293,7 @@ License - nucleoapp.com/license/
   font-family: 'nucleo-icons';
   /*src: url("../../assets/fonts/nucleo-icons.eot");
   src: url("../../assets/fonts/nucleo-icons.eot") format("embedded-opentype"), url("../../assets/fonts/nucleo-icons.woff2") format("woff2"), url("../../assets/fonts/nucleo-icons.woff") format("woff"), url("../../assets/fonts/nucleo-icons.ttf") format("truetype") format("svg");
-*/  font-weight: normal;
+*/ font-weight: normal;
   font-style: normal;
 }
 /**/
@@ -5821,4 +5821,7 @@ License - nucleoapp.com/license/
   }
 }
 
+.form-group{
+    margin-top: 10px;
+}
 /*# sourceMappingURL=paper-dashboard.css.map */

@@ -17,6 +17,8 @@ import { JogosComponent } from './private/jogos/jogos.component';
 import { NoticiasComponent } from './private/noticias/noticias.component';
 import { PerfilUsuarioComponent } from './private/perfil-usuario/perfil-usuario.component';
 import { ReviewsComponent } from './private/reviews/reviews.component';
+import { CriarNoticiaComponent } from './private/noticias/criar-noticia/criar-noticia.component';
+import { AngularEditorModule } from '@kolkov/angular-editor';
 
 @NgModule({
   declarations: [
@@ -29,12 +31,14 @@ import { ReviewsComponent } from './private/reviews/reviews.component';
     JogosComponent,
     NoticiasComponent,
     PerfilUsuarioComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    CriarNoticiaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     BrowserAnimationsModule,
     HttpClientModule,
+    AngularEditorModule,
     FormsModule,
     AppRoutingModule
   ],
