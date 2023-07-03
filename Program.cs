@@ -1,6 +1,18 @@
+
+
+using Microsoft.EntityFrameworkCore;
+using MrgGameNews;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(builder.Environment.ContentRootPath)
+    .AddJsonFile("appsettings.json", optional: true)
+    .Build();
+
+builder.Services.AddDbContext<MrgGameNewsContext>(options =>
+    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllersWithViews();
 
